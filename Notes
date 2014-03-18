@@ -1,0 +1,15 @@
+trac-8892 test case notes
+
+1.  The issue is triggered by installing the package "piecewise", then
+    attempting to compile "ghc -O2 Broken.hs".
+
+Compilation succeeds if any of these are true:
+
+    Piecewise.hs is compiled in the same pass as Broken.hs (instead of
+    installed via a package)
+
+    Compile Broken.hs with -O1 or lower
+
+    Compile Piecewise.hs with -O0
+
+    Piecewise.hs is modified as noted in that file.
