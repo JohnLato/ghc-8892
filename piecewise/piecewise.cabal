@@ -18,6 +18,6 @@ cabal-version:       >=1.10
 library
   exposed-modules:     Piecewise
   -- other-modules:       
-  build-depends:       base >=4.6 && <4.8, vector >=0.10 && <0.11, vector-space >=0.8 && <0.9, ghc-prim >=0.3 && <0.4
+  build-depends:       base >=4.6 && <4.8, vector >=0.10 && <0.11, vector-space >=0.8 && <0.9
   -- hs-source-dirs:      
   default-language:    Haskell2010
